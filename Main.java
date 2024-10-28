@@ -95,7 +95,25 @@ public class Main {
     public static void main(String[] args) {
         FamilyTree familyTree = new FamilyTree();
         
+        // Добавляем людей
+        familyTree.addPerson("John", "male");
+        familyTree.addPerson("Mary", "female");
 
+        // Добавляем детей
+        familyTree.addChild("John", "Anna", "female");
+        familyTree.addChild("Mary", "Anna", "female");
+        familyTree.addChild("John", "Tom", "male");
+
+        // Исследование
+        Research research = new Research(familyTree);
+
+        // Получаем детей Джона
+        List<Person> johnChildren = research.getChildrenOf("John");
+        System.out.println("Children of John: " + johnChildren);
+
+        // Получаем детей Мэри
+        List<Person> maryChildren = research.getChildrenOf("Mary");
+        System.out.println("Children of Mary: " + maryChildren);
     }
 }
 
