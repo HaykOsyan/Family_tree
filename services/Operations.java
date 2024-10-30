@@ -1,9 +1,12 @@
-package oop_hw1;
+package oop_hw1.services;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+
+import oop_hw1.models.FamilyTree;
+import oop_hw1.models.Person;
 
 public class Operations {
 

@@ -1,4 +1,4 @@
-package oop_hw1;
+package oop_hw1.models;
 
 import java.io.Serializable;
 import java.util.HashMap;

@@ -2,6 +2,10 @@ package oop_hw1;
 
 import java.util.List;
 
+import oop_hw1.models.FamilyTree;
+import oop_hw1.models.Person;
+import oop_hw1.services.Operations;
+
 public class Main {
     public static void main(String[] args) {
         FamilyTree familyTree = new FamilyTree();
