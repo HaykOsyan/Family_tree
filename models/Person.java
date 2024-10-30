@@ -1,4 +1,5 @@
 package oop_hw1.models;
+
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
@@ -6,24 +7,26 @@ import java.util.List;
 public class Person implements Serializable {
     private String name;
     private String gender;
-    private List<Person> children;
+    private List<Person> children = new ArrayList<>();
 
     public Person(String name, String gender) {
         this.name = name;
         this.gender = gender;
-        this.children = new ArrayList<>();
     }
 
     public String getName() {
         return name;
     }
 
-    public void addChild(Person child) {
-        children.add(child);
+    public String getGender() {
+        return gender;
     }
 
-    @Override
-    public String toString() {
-        return "Person{name='" + name + "', gender='" + gender + "'}";
+    public List<Person> getChildren() {
+        return children;
+    }
+
+    public void addChild(Person child) {
+        children.add(child);
     }
 }
