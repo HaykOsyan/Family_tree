@@ -1,10 +1,11 @@
 package oop_hw1;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
-class Person {
+public class Person implements Serializable {
     private String name;
-    private String gender;  // "male" or "female"
+    private String gender;
     private List<Person> children;
 
     public Person(String name, String gender) {
@@ -15,14 +16,6 @@ class Person {
 
     public String getName() {
         return name;
-    }
-
-    public String getGender() {
-        return gender;
-    }
-
-    public List<Person> getChildren() {
-        return children;
     }
 
     public void addChild(Person child) {
